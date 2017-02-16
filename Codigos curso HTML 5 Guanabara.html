@@ -1,0 +1,168 @@
+Comandos de Git
+Set Up Git:
+git config --global user.name "Your Name"
+git config --global user.email "youremail@domain.com"
+
+other commands
+git clone (url)
+git add (file names)
+git commit -m "(committed message)
+git push -u origin master
+git remote add origin master (url)
+Git branch nomedabranch -> criar uma branch
+Git branch -> visualizar as branches existentes
+Git checkout nomedabranch -> para mudra para a branch desejada.
+Git push origin nomedabranch -> inserir a branch no github
+Git push –u origin nomedabranch -> falar para o github q a branch local e a mesma da branch remota
+Git branch –r -> mostra as branchs remotas.
+Git branch –t design origin/nomedabranch  -> Fala para o servidor local o nome da branch correspondente no servidor remote para comecar a ser trackeada
+Aula 7
+Estudo HTML 5 Guanabara -> Tags
+
+Inicio de arquivo para reconhecer que e html 5
+<DOCTYPE! html>
+Estrutura básica do HTML
+<html>
+	<head>
+		<title>...</title>
+	</head>
+	<body> ........ </body>
+ </html>
+
+Comandos para destacar textos:
+<h1>...</h1>
+<h2>...</h2>
+<h3>...</h3>
+<h4>...</h4>
+<h5>...</h5>
+<h6>...</h6>
+
+Comando para criar um paragrafo:
+<p> ... </p>
+
+Comando para criar uma divisão de conteúdo:
+<div> ... </div>
+
+Comando para criar um grupo de “headers” :
+<hgroup> .... </hgroup>
+
+Comando para estilizar um pedaço especifico do texto:
+<span> .... </span>
+Estilizar um SPAN utilizando o CSS: (colocar texto sublinhado)
+<span style:”text-decoration: underline;”>  Conteúdo  </span>
+Variações:
+	text-decoration: underline;
+	text-decoration: overline;
+	text-decoration: line-through;
+	text-decoration: none;
+
+Mudando o negrito utilizando o CSS:
+	<span style:”text-weight: normal;”>  Conteúdo  </span>
+Variações:
+	text-weight: bold;
+	text-weight:bolder;
+	text-weight: valor entre 400 e 900;
+
+Alinhando o texto com CSS:
+	<span style:”text-align: center;”>  Conteúdo  </span>
+Variações:
+	text-align: left;
+	text-align: right;
+	text-align: justify;
+
+Adicionando espaço para o primeiro parágrafo no CSS;
+
+<span style:”text-align: center; text-ident: 50px”>  Conteúdo  </span>
+
+Note, que é possível colocar vários parâmetros de CSS dentro de uma TAG.
+
+
+Comando para dar destaque (itálico) para uma palavra:
+
+<b> ... </b>
+
+Tags em HTML para formatar texto para ficar a baixo da linha e acima da linha de escrita:
+<sup> ... </sup>
+<sub> ... </sub>
+
+TAG para mostrar código no HTML:
+<code> ...... </code>
+
+Aula 8
+Inserir imagem como background de uma página
+Comando do CSS:
+	background-image: url(“fundo.jpg”);
+
+Alterando fundo de qualquer elemento com Hexadecimal ou RGB;
+	background-color: #ffffff;
+	background-color: rgb(valor1, valor2, valor3);
+Inserindo a cor com transparência (Alpha):
+	background-color: rgba(valor1, valor2, valor3, valor alpha);
+
+Mudar a cor da fonte da letra:
+	Color: rgba(valor1, valor2, valor3, valor alpha);
+	O restante se aplica ao mesmo tipo do background.
+
+Comando css para não deixar o conteúdo sair de uma determinada caixa:
+Box-sizing: border-box;
+
+
+Deixar itens invisíveis utilizando a opacidade no CSS:
+
+
+
+Aula 9
+Muito Importante!!! -> Colocar todas as imagens dento da TAG
+<figure>
+	<img scr=”caminhodaimagem”/>
+<figcaption>
+	<h3>Titulo da imagem</h3>
+	<p> Descricao da imagem </p>
+</figcaption>
+</figure>
+
+
+Aula 10
+Essa aula teve muito CSS.. Segue códigos abaixo:
+Ao criar o arquivo CSS, inserir o código abaixo para aceitar os caracteres utilizados no Brasil:
+@chatset “UTF-8”;
+Agora temos que referenciar o arquivo criado no arquivo html utilizando a tag abaixo:
+<link rel=”stylesheet” type=”text/css” href=”caminho do arquivo de css”/>
+
+Para fazer comentários em qualquer arquivo:
+Utilize  /* Comentario qualquer */
+
+Para criar uma classa dentro de qualquer tag basta fazer o código abaixo:
+<Picture class= “nome da classe”>
+
+Colocando borda em uma imagem:
+Border: 8px solid red;
+Colocando sombra na imagem:
+Box-shadow: deslocamento horizontal(em px)  deslocamento vertical (px)  Esvoacamento(px) cor da sombra.
+
+Aumentar imagem para tela toda:
+Width: 100%
+Height: 100%
+
+Inserir posição relativa ou absoluta:
+Position: relative;
+Position: absolute;
+Top: 0px;
+
+Aula 11
+Utilizar tag para criar menu de navegação:
+<nav> ..... </nav>
+Dentro de nav:
+<ol>...</ol> para lista ordenada (ordered list)
+<ul> ... </ul> para lista não ordenada (unordered list)
+<li> ... </li>  itens de uma lista ( list itens)
+Tipos de lista
+<ol type=”A”>
+<ol type=”1”>
+<ol type=”i”>
+
+Iniciando lista com determinado numero:
+<ol type=”A” start=”3”>
+
+
+•	Teste do GITHub para edição de arquvos no word
