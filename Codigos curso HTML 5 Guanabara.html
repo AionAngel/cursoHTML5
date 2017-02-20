@@ -23,6 +23,50 @@ git rebase --continue -> para continuar fazendo o rebase e apontar as diferencas
 git checkout nomedoarquivo -> volta o arquivo para o ultimo commit realizado na branch
 git reset HEAD nomedoarquivo -> para voltar o arquivo para um estado antes de ser commitado
 git reset codigodocommit -> comando utilizado para limpar o commit, nao deleta o arquivo, somente limpa o estado de commit
+git revert codigodocommit -> utilizado para desfazer as alterações de um determinado commit.
+
+Isso e meio confuso, quando se faz uma alteração e depois e enviado um commit dessa alteração especifica
+depois vc faz outra alteracao e percebe que a primeira estava errada, voce congela a alteração atual
+corrige o sistema e depois volta a trabalhar no commit que estava anteriormente,
+
+git stash -> guarda as alterações em uma area de transferência
+git stash list -> mostra todos os logs da area de transferencia (stash)
+git stash apply nomedastash -> retomar as alrerações guardadas na área de transferência.
+git stash drop -> limpa a área de transferência do stash
+
+Outro comando confuso, a primeira impressão é que o usuario quer encontrar um commit especifico
+ele coloca um range de commits, depois faz uma busca para saber se a alteração feita esta boa.
+
+git bisect start -> para iniciar a busca por um commit
+git bisect bad HEAD -> Para falar que o commit atual nao e o que estamos procurando
+git bisect good codigodocommit -> para falar qual commit e bom
+
+ Automatizar todo processo de comandos do git com ALIASES
+ vim ~/.gitconfig -> para entrar no menu de edição do git
+ criar a seguinte estrutura
+
+ [alias]
+ 		st = status -> transforma o comando git status em git st
+		envia = !git checkout master && git pull && git checkout desenvolvimento && git rabase master ..... -> utilizado para fazer vários comandos automaticamente
+
+
+Mostrar o Log de commits no Git de forma mais bonita e organizada
+
+git log --pretty=oneline  -> mostra os commits linha por linha ( fica mais facil de visualizar)
+git log --pretty=full -> uma variacao mas nao muito boa.
+git log --pretty=short
+
+Log personalizado -> %an = autor %h = codigo do commit (hash) %s = mensagem do commit
+
+No meio desses comandos posso colocar mensagens pré-definidas. Fica assim:
+git log --pretty ="%an realizou o commit %h: com a mensagem %s"
+
+Ver quais arquivos foram alterados
+git log -p
+git log --stat
+
+
+
 
 Aula 7
 Estudo HTML 5 Guanabara -> Tags
