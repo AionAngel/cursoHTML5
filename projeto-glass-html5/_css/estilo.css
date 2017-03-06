@@ -1,8 +1,20 @@
 @charset "UTF-8";
 
+
+body {
+  background-color: #dddddd;
+
+}
 p {
   text-align: justify;
   text-indent: 50px;
+}
+
+header#cabecalho img#icone {
+  position: absolute;
+  left: 950px;
+  top: 50px;
+
 }
 
 figure.teste {
@@ -76,5 +88,9 @@ nav#menu a:hover {
 }
 
 div#interface {
-  width: 800px;
+  width: 900px;
+  background-color: #ffffff;
+  margin: -20px auto 0px auto;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+  padding: 10px;
 }
